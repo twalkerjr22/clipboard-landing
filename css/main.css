@@ -1,2 +1,49 @@
-.container .nav {
-  display: flex; }
+@import url("https://fonts.googleapis.com/css?family=Bai+Jamjuree:400,600&display=swap");
+html,
+body {
+  margin: 0px;
+  font-family: 'Bai Jamjuree', sans-serif;
+  font-size: 18px; }
+
+.container {
+  min-width: 100%; }
+
+.container_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .container_content--nav {
+    min-height: 600px;
+    background-image: url("../images/bg-header-desktop.png"); }
+  .container_content .dual-cta .btn {
+    margin: 5px; }
+  .container_content h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #4c545d; }
+  .container_content h2 {
+    font-size: 1.7rem;
+    color: #4c545d; }
+
+.btn {
+  font-size: 1rem;
+  font-weight: 400;
+  padding: .8rem 1rem;
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); }
+
+.cyan {
+  color: white;
+  background-color: #26baa4; }
+  .cyan:hover {
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4); }
+
+.lightBlue {
+  color: white;
+  background-color: #6173ff; }
+  .lightBlue:hover {
+    box-shadow: 0px 15px 20px #6173ff; }

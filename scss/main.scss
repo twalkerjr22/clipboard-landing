@@ -1,7 +1,92 @@
-.container {
+@import url('https://fonts.googleapis.com/css?family=Bai+Jamjuree:400,600&display=swap');
 
-    .nav {
-        display: flex;
+$primary-colors: ('strongCyan':hsl(171, 66%, 44%),
+'lightBlue':hsl(233, 100%, 69%));
+
+$neutral-colors: ('darkGrayishBlue':hsl(210, 10%, 33%),
+'grayishBlue': hsl(201, 11%, 66%));
+
+$font-weights: ('semi-bold':600,
+'regular':400);
+
+html,
+body {
+    margin: 0px;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 18px;
+
+}
+
+.h1 {}
+
+.container {
+    min-width: 100%;
+
+}
+
+.nav {}
+
+.container_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+    &--nav {
+        min-height: 600px;
+        background-image: url('../images/bg-header-desktop.png');
     }
 
+    .dual-cta {
+
+        .btn {
+            margin: 5px;
+        }
+    }
+
+    h1 {
+        font-size: 2rem;
+        font-weight: map-get($font-weights, 'semi-bold');
+        color: map-get($neutral-colors, 'darkGrayishBlue');
+    }
+
+    h2 {
+        font-size: 1.7rem;
+        color: map-get($neutral-colors, 'darkGrayishBlue');
+    }
+}
+
+
+.btn {
+    font-size: 1rem;
+    font-weight: map-get($font-weights, 'regular');
+    padding: .8rem 1rem;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+
+
+}
+
+.cyan {
+    color: white;
+    background-color: map-get($primary-colors, 'strongCyan');
+
+    &:hover {
+        box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+
+    }
+}
+
+.lightBlue {
+    color: white;
+    background-color: map-get($primary-colors, 'lightBlue');
+
+    &:hover {
+        box-shadow: 0px 15px 20px map-get($primary-colors, 'lightBlue');
+
+    }
 }
