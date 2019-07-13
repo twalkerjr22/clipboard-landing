@@ -1,6 +1,16 @@
 .nav_hero {
-  min-height: 600px;
-  background-image: url("../images/bg-header-desktop.png"); }
+  background-image: url("../images/bg-header-desktop.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-width: 100%;
+  width: 100%; }
 
 .dual-cta .btn {
   margin: 5px; }
+
+@media only screen and (max-width: 720px) {
+  .nav-logo {
+    width: 40%; }
+  .nav_hero {
+    padding: 100px 0px;
+    background-image: url("../images/bg-header-mobile.png"); } }

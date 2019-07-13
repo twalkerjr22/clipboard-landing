@@ -9,43 +9,50 @@ $neutral-colors: ('darkGrayishBlue':hsl(210, 10%, 33%),
 $font-weights: ('semi-bold':600,
 'regular':400);
 
+* {
+    box-sizing: border-box;
+}
+
 html,
 body {
     margin: 0px;
     font-family: 'Bai Jamjuree', sans-serif;
     font-size: 18px;
-
+    width: 100%;
+    min-width: 100%;
+    overflow: auto;
+    
 }
 
-.h1 {}
+h1 {
+    padding: 10px;
+    font-size: 2rem;
+    font-weight: map-get($font-weights, 'semi-bold');
+    color: map-get($neutral-colors, 'darkGrayishBlue');
+}
+
+h2 {
+    padding: 10px;
+    font-size: 1.7rem;
+    color: map-get($neutral-colors, 'darkGrayishBlue');
+}
+
+h3 {
+    padding: 10px;
+    color: map-get($neutral-colors, 'darkGrayishBlue');
+}
+
+p {
+    margin-top: 0;
+    line-height: 35px;
+    width: 55%;
+    color: map-get($neutral-colors, 'grayishBlue');
+}
 
 .container {
     min-width: 100%;
 
 }
-
-.nav {}
-
-.container_content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-
-    h1 {
-        font-size: 2rem;
-        font-weight: map-get($font-weights, 'semi-bold');
-        color: map-get($neutral-colors, 'darkGrayishBlue');
-    }
-
-    h2 {
-        font-size: 1.7rem;
-        color: map-get($neutral-colors, 'darkGrayishBlue');
-    }
-}
-
 
 .btn {
     font-size: 1rem;
@@ -78,4 +85,36 @@ body {
     }
 }
 
+
+.mt-100 {
+    margin-top: 100px;
+}
+
+.mb-100 {
+    margin-bottom: 100px;
+}
+
+.mt-50 {
+    margin-top: 50px;
+}
+
+.p-3 {
+    padding: 30px;
+}
+
+
+@media only screen and (max-width : 720px) {
+    p {
+        padding: 10px 10px;
+        width: 100%;
+
+    }
+
+    .btn {
+        width: 90%;
+    }
+}
+
 @import './components/nav-hero.scss';
+@import './components/content-block.scss';
+@import './components/footer.scss';
