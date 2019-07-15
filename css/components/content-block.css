@@ -3,7 +3,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: center; }
+  text-align: center;
+  min-height: 100%; }
+
+.full-height {
+  height: 100vh; }
 
 .container_content--2-col {
   margin-top: 40px;

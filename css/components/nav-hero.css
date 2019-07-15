@@ -3,7 +3,9 @@
   background-size: contain;
   background-repeat: no-repeat;
   min-width: 100%;
-  width: 100%; }
+  width: 100%;
+  min-height: 100%;
+  height: 100%; }
 
 .dual-cta .btn {
   margin: 5px; }

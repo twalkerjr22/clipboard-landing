@@ -4,10 +4,14 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-
-
+    min-height: 100%;
+    
 }
 
+
+.full-height {
+    height: 100vh;
+}
 
 .container_content--2-col {
     margin-top: 40px;
@@ -21,7 +25,7 @@
 .container_content--3-col {
     display: flex;
     flex-direction: row;
-    padding:0 30px;
+    padding: 0 30px;
 }
 
 .col-6 {
@@ -106,7 +110,8 @@
 
     .col-3 {
         width: 100%;
-        p{
+
+        p {
             width: 100%;
         }
     }
